@@ -11,7 +11,10 @@ cask "vcmi" do
   desc "Open-source engine for Heroes of Might & Magic III"
   homepage "https://vcmi.eu/"
 
-  depends_on macos: ">= :catalina"
+  depends_on macos: [
+    :catalina,
+    :big_sur,
+  ]
 
   app "VCMI.app"
 
